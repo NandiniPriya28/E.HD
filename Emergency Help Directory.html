@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5502/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Help Directory</title>
+    <link rel="stylesheet" href="./Emergency Help Directory_files/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🚨 Emergency Help Directory</h1>
+        <p>Quick access to important emergency services</p>
+    </header>
+
+    <section class="search-box">
+        <input type="text" id="search" placeholder="Search emergency service...">
+    </section>
+
+    <main class="container">
+
+        <div class="card">
+            <div class="icon">🚓</div>
+            <h2>Police</h2>
+            <p>For police emergencies and immediate assistance.</p>
+            <a href="tel:112" class="call-btn">📞 Call 112</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚑</div>
+            <h2>Ambulance</h2>
+            <p>For medical emergencies and ambulance assistance.</p>
+            <a href="tel:108" class="call-btn">📞 Call 108</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚒</div>
+            <h2>Fire Brigade</h2>
+            <p>For fire emergencies and rescue assistance.</p>
+            <a href="tel:101" class="call-btn">📞 Call 101</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏥</div>
+            <h2>Hospital</h2>
+            <p>Find emergency medical help and nearby hospitals.</p>
+            <button onclick="showMessage(&#39;Please contact your nearest hospital or emergency service.&#39;)">
+                🏥 Get Help
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="icon">👩</div>
+            <h2>Women Help</h2>
+            <p>Support and emergency assistance for women.</p>
+            <a href="tel:181" class="call-btn">📞 Call 181</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🆘</div>
+            <h2>Emergency Help</h2>
+            <p>One number for urgent emergency assistance.</p>
+            <a href="tel:112" class="call-btn">📞 Call 112</a>
+        </div>
+
+    </main>
+
+    <section class="info">
+        <h2>Important Information</h2>
+        <p>
+            In a serious emergency, stay calm and contact the appropriate
+            emergency service as quickly as possible.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Emergency Help Directory | Nandini Priya</p>
+    </footer>
+
+    <script src="./Emergency Help Directory_files/script.js.download"></script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
